@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test CommonJS</title>
+    <script src="src/common.js"></script>
+    <script src="src/wrapped_module/a.js"></script>
+    <script src="src/wrapped_module/b.js"></script>
+    <script src="src/wrapped_module/c.js"></script>
+    <script src="src/wrapped_module/d.js"></script>
+  </head>
+  <body>
+    <script>
+      var d = require('d');
+      var c = require('c');
+
+      console.log('Call module C');
+      c();
+      console.log(' ');
+
+      console.log('Call module D');
+      d();
+      console.log(' ');
+    </script>
+  </body>
+</html>
