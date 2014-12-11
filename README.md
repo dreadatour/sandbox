@@ -16,7 +16,4 @@
 
 1. добавить в начале файла "(function(){"
 
-2. добавить в конце файла ")}());"
-
-3. заменить "module.exports =" на "module.exports('{module_name}', ", где module_name соответствует
-названию модуля для этого файла в ./config.json
+2. добавить в конце файла на последней строке "modules['{module_name}'] = module.exports; module.exports = null;}());" где {module_name} соответствует названию модуля для этого файла в ./config.json
