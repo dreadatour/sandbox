@@ -3,9 +3,7 @@ var require = function (name) {
 };
 
 var module = {
-  exports: function (name, impl) {
-    modules[name] = impl;
-  }
+  exports: null
 };
 
 var modules = {};
