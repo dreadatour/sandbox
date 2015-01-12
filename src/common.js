@@ -3,7 +3,7 @@ var require = function (name) {
 };
 
 var module = {
-  exports: null
+  exports: {}
 };
 
 var modules = {};

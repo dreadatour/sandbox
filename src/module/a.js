@@ -1,3 +1,3 @@
-module.exports = function () {
+exports = function () {
   console.log('Module A called');
 };
