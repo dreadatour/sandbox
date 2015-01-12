@@ -1,6 +1,30 @@
 {
-  "a": "module/a",
-  "b": "module/b",
-  "c": "module/c",
-  "d": "module/d"
+  "root": "src/",
+  "modules": {
+    "a": "module/a/",
+    "b": "module/b/",
+    "c": "module/c/",
+    "d": "module/d/",
+    "e": "module/e"
+  },
+  "bundles": {
+    "c": {
+      "modules": [
+        "c"
+      ],
+      "output": "built_module/",
+      "exclude": [],
+      "pre_processors": [],
+      "post_processors": []
+    },
+    "d": {
+      "modules": [
+        "d",
+        "e"
+      ],
+      "output": "built_module/"
+    }
+  },
+  "pre_processors": {},
+  "post_processors": {}
 }
