@@ -1,30 +1,47 @@
 {
-  "root": "src/",
+  "root_dir": "src/",  // this is root directory (relative to this config file directory)
+
+  "output_dir": "built_module/",  // this is output directory (relative to root directory)
+
+  // this is modules list
   "modules": {
-    "a": "module/a/",
-    "b": "module/b/",
-    "c": "module/c/",
-    "d": "module/d/",
-    "e": "module/e"
+    "module_a": "module/a/",
+    "module_b": "module/b/",
+    "module_c": "module/c/",
+    "module_d": "module/d/",
+    "module_e": "module/e",
+    "module_f": "module/f",
+    "styles": "module/styles"
   },
+
+  // bundles settings
   "bundles": {
-    "c": {
+    "bundle_1": {
       "modules": [
-        "c"
+        "module_c"
       ],
-      "output": "built_module/",
+      "output_dir": "built_module/",
       "exclude": [],
       "pre_processors": [],
       "post_processors": []
     },
-    "d": {
+    "bundle_2": {
       "modules": [
-        "d",
-        "e"
+        "module_d",
+        "module_e"
       ],
-      "output": "built_module/"
+      "output_dir": "built_module/"
+    },
+    "styles": {
+      "modules": [
+        "styles"
+      ]
     }
   },
+
+  // pre-processors
   "pre_processors": {},
+
+  // post-processors
   "post_processors": {}
 }

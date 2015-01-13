@@ -1,4 +1,4 @@
-var a = require('a');
+var a = require('module_a');
 
 module.exports = function () {
   console.log('Call module A from module B');

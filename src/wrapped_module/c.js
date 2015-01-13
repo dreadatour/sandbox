@@ -1,8 +1,8 @@
-(function(){var a = require('a');
-var b = require('b');
+(function(){var a = require('module_a');
+var b = require('module_b');
 
 module.exports = function () {
   console.log('Call module B from module C');
   b();
   console.log('Module C called');
-};modules['c'] = module.exports; module.exports = {};}());
+};modules['module_c'] = module.exports; module.exports = {};}());

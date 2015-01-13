@@ -1,7 +1,7 @@
-(function(){var a = require('a');
+(function(){var a = require('module_a');
 
 module.exports = function () {
   console.log('Call module A from module B');
   a();
   console.log('Module B called');
-};modules['b'] = module.exports; module.exports = {};}());
+};modules['module_b'] = module.exports; module.exports = {};}());

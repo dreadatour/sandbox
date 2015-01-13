@@ -1,3 +1,3 @@
 (function () {module.exports = function () {
   console.log('Module E called');
-};modules['e'] = module.exports; module.exports = {};}());
+};modules['module_e'] = module.exports; module.exports = {};}());
